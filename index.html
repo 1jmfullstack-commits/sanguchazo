@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pack Semanal – Comida Rendidora</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; }
+    h1 { text-align: center; }
+    label { display: block; margin-top: 10px; font-weight: bold; }
+    input, select { width: 100%; padding: 8px; margin-top: 5px; }
+    button { margin-top: 20px; width: 100%; padding: 12px; font-size: 16px; background: black; color: white; border: none; }
+  </style>
+</head>
+<body>
+
+<h1>Comida rendidora – Pack semanal</h1>
+
+<p>
+🍴 Sándwich grande de fiambre + queso<br>
+📆 Lunes a viernes (5 días)<br>
+🚶‍♂️ Entrega a domicilio – Devoto
+</p>
+
+<p><strong>Precio semanal:</strong> $X</p>
+
+<form onsubmit="pagar(event)">
+  <label>Nombre</label>
+  <input required>
+
+  <label>Dirección</label>
+  <input required>
+
+  <label>Teléfono</label>
+  <input required>
+
+  <label>Horario</label>
+  <select required>
+    <option value="">Elegí</option>
+    <option>Mañana</option>
+    <option>Mediodía</option>
+  </select>
+
+  <button>PAGAR Y RESERVAR</button>
+</form>
+
+<script>
+function pagar(e) {
+  e.preventDefault();
+  alert("Acá va MercadoPago");
+  // después reemplazamos esto por el link real
+}
+</script>
+
+</body>
+</html>
